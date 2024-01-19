@@ -13,3 +13,11 @@ function handleFireClick() {
 
 }
 
+//create function for handleIceClick
+//adds the ice emoji to div element when clicked on
+
+function handleIceClick() {
+  let divIWantToAddTo = document.querySelector('div');
+  divIWantToAddTo.innerText += '❄️';
+
+}

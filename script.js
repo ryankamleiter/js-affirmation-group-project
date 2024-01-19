@@ -24,6 +24,7 @@ function handleIceClick() {
 
 // make a handle submit function
 function handleSubmit(event) {
+
   event.preventDefault();
   let affirmationElement = document.getElementById('affirmation_text');
   let authorElement = document.getElementById('author_text');
@@ -36,25 +37,30 @@ function handleSubmit(event) {
   ${authorElement.value}
   </td>
   <td>
-   
-   <button>❌</button>
+  
+   <button onClick="deleteAffirmation(event)">❌</button>
 
   </td>
   `;
 
-  console.log(affirmationElement.value);
+  //console.log(affirmationElement.value);
 
-  // affirmationContainer.innerHTML += `
+  // console.log(affirmationElement);
+  // console.log(authorElement);
 
-  //   // < #firstEntry >
-  //   // <affirmationElement>
-  //   // </#firstEntry>
-  // `;
-  console.log(affirmationElement);
-  console.log(authorElement);
+  affirmationElement.value = '';
+  authorElement.value = '';
 };
+
 //add rows to tbody
 function deleteAffirmation(event) {
 
-}
+  event.target.parentElement.parentElement.remove();
+
+
+  // console.log(event.target.parentElement.parentElement);
+
+
+};
+
 

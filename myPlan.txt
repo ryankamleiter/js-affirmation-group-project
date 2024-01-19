@@ -1,0 +1,22 @@
+----Part 1----
+make a function that can add a fire emoji in a new div
+    make function
+    create div element
+    fill newly created div with fire emoji
+
+make a function that can add an ice emoji in a new div
+    make function
+    create div element
+    fill newly created div with ice emoji
+
+----Part 2----
+create a handleSubmit() function
+    ensure the page doesn't refresh after submit button is pressed
+    put the user input into the affirmation text/author box
+    delete the *hardcoded*  table rows from `index.html` once you have this part working.
+
+----Part 3----
+make a delete affirmation function
+    add event listener to delete button
+    figure out the event that triggers when clicking the delete button
+    remove affirmations with event.target.parentElement.remove()?
